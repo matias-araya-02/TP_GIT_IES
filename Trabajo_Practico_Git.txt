@@ -1,0 +1,106 @@
+
+TRABAJO PRÁCTICO INICIAL DE GIT
+“Mis primeros pasos con Git y GitHub”
+Usando Git Bash
+
+🎯 Objetivo:
+Aprender a usar los comandos básicos de Git desde Git Bash:
+✅ Crear repositorios
+✅ Agregar y borrar archivos
+✅ Crear y cambiar ramas
+✅ Subir cambios a GitHub
+✅ Clonar un repositorio
+
+🛠️ Requisitos:
+- Tener Git instalado
+- Tener una cuenta en GitHub
+- Tener acceso a Git Bash
+
+🧩 Actividades con Instrucciones Paso a Paso
+
+🔹 PARTE 1: Configurar tu usuario en Git (solo una vez)
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+
+🔹 PARTE 2: Crear el repositorio y subir un archivo
+1. Crear una carpeta local para el proyecto:
+mkdir mi-repo
+cd mi-repo
+
+2. Inicializar Git:
+git init
+
+3. Crear un archivo:
+echo "Hola Git" > archivo.txt
+
+4. Verificar el estado del repositorio:
+git status
+
+5. Agregar el archivo al área de preparación:
+git add archivo.txt
+
+6. Hacer un commit:
+git commit -m "Primer commit: agrego archivo.txt"
+
+7. Crear un nuevo repositorio vacío en GitHub (sin README ni gitignore)
+
+8. Vincular el repositorio local con GitHub:
+git remote add origin https://github.com/tuusuario/mi-repo.git
+git branch -M main
+
+9. Subir los cambios a GitHub:
+git push -u origin main
+
+🔹 PARTE 3: Crear una nueva rama y cambiar de rama
+1. Crear una nueva rama llamada pruebas:
+git branch pruebas
+
+2. Ver las ramas disponibles:
+git branch
+
+3. Cambiar a la rama pruebas:
+git checkout pruebas
+
+4. Hacer un cambio en esta rama:
+echo "Este cambio está en la rama pruebas" >> archivo.txt
+
+5. Guardar el cambio con un nuevo commit:
+git add archivo.txt
+git commit -m "Modifico archivo.txt en la rama pruebas"
+
+6. Subir la rama al repositorio remoto:
+git push origin pruebas
+
+🔹 PARTE 4: Borrar un archivo
+1. Eliminar el archivo con Git (desde cualquier rama):
+git rm archivo.txt
+
+2. Confirmar la eliminación:
+git commit -m "Elimino archivo.txt"
+git push origin pruebas
+
+🔹 PARTE 5: Clonar un repositorio
+1. Salir de la carpeta actual:
+cd ..
+
+2. Clonar tu repositorio:
+git clone https://github.com/tuusuario/mi-repo.git
+
+3. Entrar a la carpeta clonada:
+cd mi-repo
+
+4. Ver las ramas disponibles:
+git branch -a
+
+5. Cambiar a la rama pruebas si querés:
+git checkout pruebas
+
+📘 Entrega:
+ enviar:
+- Link al repositorio público en GitHub
+- Captura de pantalla del uso de comandos:
+  - git branch
+  - git status
+  - git log --oneline
+  - git rm
+  - git push
